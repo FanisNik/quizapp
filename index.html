@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Το Παιχνίδι μας</title>
+    <title>Get to Know me</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -68,35 +68,34 @@
 <body>
 
     <h1> Quiz </h1>
-    <p>Απάντησε σωστά στις ερωτήσεις εάν θες να ζήσεις!</p>
-    <div id="timer">Χρόνος: <span id="time">9</span> δευτερόλεπτα</div>
+    <p>Answer all the questions correctly if you're considered my friend! Be careful there is time on each question.</p>
+    <div id="timer">Time: <span id="time">9</span> seconds</div>
 
     <div id="quiz">
-        <p>1. Ποια από τις παρακάτω ημερομηνίες με είδες πρώτη φορά;</p>
-        <button onclick="checkAnswer('correct', 'quiz', 'game', 'date')"><span class="icon">📅</span>16 Δεκεμβρίου</button>
-        <button onclick="checkAnswer('wrong', '', '', 'date')"><span class="icon">📅</span>18 Δεκεμβρίου</button>
-        <button onclick="checkAnswer('wrong', '', '', 'date')"><span class="icon">📅</span>16 Ιανουαρίου</button>
-        <button onclick="checkAnswer('wrong', '', '', 'date')"><span class="icon">📅</span>18 Ιανουαρίου</button>
+        <p>1. When is my birthday?</p>
+        <button onclick="checkAnswer('correct', 'quiz', 'game', 'date')"><span class="icon">📅</span>6 May</button>
+        <button onclick="checkAnswer('wrong', '', '', 'date')"><span class="icon">📅</span>5 May</button>
+        <button onclick="checkAnswer('wrong', '', '', 'date')"><span class="icon">📅</span>16 May</button>
+        <button onclick="checkAnswer('wrong', '', '', 'date')"><span class="icon">📅</span>15 May</button>
     </div>
 
     <div id="game">
-        <p>2. Πού πήγαμε στο πρώτο μας ταξίδι μαζί;</p>
-        <button onclick="checkAnswer('wrong', '', '', 'trip')"><span class="icon">✈️</span>Αθήνα</button>
-        <button onclick="checkAnswer('correct', 'game', 'final', 'trip')"><span class="icon">🏖️</span>Κέρκυρα</button>
-        <button onclick="checkAnswer('wrong', '', '', 'trip')"><span class="icon">🌍</span>Μεσοποταμία</button>
-        <button onclick="checkAnswer('wrong', '', '', 'trip')"><span class="icon">🏙️</span>Κοζάνη</button>
+        <p>Where i am from?</p>
+        <button onclick="checkAnswer('wrong', '', '', 'trip')"><span class="icon">✈️</span>Athens</button>
+        <button onclick="checkAnswer('correct', 'game', 'final', 'trip')"><span class="icon">🏖️</span>Naxos</button>
+        <button onclick="checkAnswer('wrong', '', '', 'trip')"><span class="icon">🌍</span>Crete</button>
     </div>
 
     <div id="final">
-        <p>3. Ποιο είναι το αγαπημένο μου τραγούδι από Νατάσα;</p>
-        <button onclick="checkAnswer('wrong', '', '', 'song')"><span class="icon">🎵</span>Κύκλος</button>
-        <button onclick="checkAnswer('wrong', '', '', 'song')"><span class="icon">🎵</span>Κόκκινη Γραμμή</button>
-        <button onclick="checkAnswer('wrong', '', '', 'song')"><span class="icon">🎵</span>Επιτέλους</button>
-        <button onclick="checkAnswer('correct', 'final', 'extra', 'song')"><span class="icon">🎵</span>Φεγγάρι</button>
+        <p>Whats my favorite Greek Singer</p>
+        <button onclick="checkAnswer('wrong', '', '', 'song')"><span class="icon">🎵</span>Giannis Ploutarhos</button>
+        <button onclick="checkAnswer('wrong', '', '', 'song')"><span class="icon">🎵</span>Antonis Remos</button>
+        <button onclick="checkAnswer('wrong', '', '', 'song')"><span class="icon">🎵</span>Kaiti Garbi</button>
+        <button onclick="checkAnswer('correct', 'final', 'extra', 'song')"><span class="icon">🎵</span>Natasa Theodoridou</button>
     </div>
 
     <div id="extra">
-        <p>4. Ποιο είναι το αγαπημένο μας φαγητό;</p>
+        <p>4. Whts my favorite dish?;</p>
         <button onclick="checkAnswer('correct', 'extra', 'lastQuestion', 'food')"><span class="icon">🍕</span>Πίτσα</button>
         <button onclick="checkAnswer('correct', 'extra', 'lastQuestion', 'food')"><span class="icon">🥙</span>Σουβλάκι</button>
         <button onclick="checkAnswer('correct', 'extra', 'lastQuestion', 'food')"><span class="icon">🍝</span>Μακαρόνια</button>
@@ -104,15 +103,15 @@
     </div>
 
     <div id="lastQuestion">
-        <p>5. Ποιο από τα άτομα παρακάτω θα ήθελα να σκοτώσω :);</p>
-        <button onclick="finalRevealMessage()"><span class="icon">🔪</span>Παραδια</button>
-        <button onclick="finalRevealMessage()"><span class="icon">🔪</span>Κρανια</button>
-        <button onclick="finalRevealMessage()"><span class="icon">🔪</span>Σταυρο</button>
-        <button onclick="finalRevealMessage()"><span class="icon">🔪</span>Κωνσταντινα</button>
+        <p>5. Whats my dogs name </p>
+        <button onclick="finalRevealMessage()"><span class="icon"></span>Zira</button>
+        <button onclick="finalRevealMessage()"><span class="icon"></span>Zera</button>
+        <button onclick="finalRevealMessage()"><span class="icon"></span>Zirra</button>
+        <button onclick="finalRevealMessage()"><span class="icon"></span>Zerra</button>
     </div>
 
     <div id="message">
-        <h2>📜 Το Ειδικό Σου Μήνυμα</h2>
+        <h2>📜 Your special message </h2>
         <p id="finalMessage"></p>
     </div>
 
@@ -121,9 +120,9 @@
         let timeLeft = 9;
 
         function startTimer() {
-            timeLeft = 9; // Επαναφορά του χρονόμετρου για κάθε ερώτηση
+            timeLeft = 9; 
             document.getElementById('time').textContent = timeLeft;
-            document.getElementById('timer').style.display = 'block'; // Εμφάνιση του χρονόμετρου
+            document.getElementById('timer').style.display = 'block'; 
 
             timerInterval = setInterval(() => {
                 timeLeft--;
@@ -136,21 +135,20 @@
         }
 
         function timeUp() {
-            alert('Πολύ αργείς και θα τα πάρω!');
+            alert('Too slow...');
             resetGame();
         }
 
         function checkAnswer(answer, currentSection, nextSection, questionType) {
-            clearInterval(timerInterval); // Σταματά το χρονόμετρο όταν επιλέγεται μια απάντηση
-
+            clearInterval(timerInterval);
             if (answer === 'correct') {
                 document.getElementById(currentSection).style.display = 'none';
                 document.getElementById(nextSection).style.display = 'block';
                 playSound('correct');
                 displayGIF('correct', questionType);
-                startTimer(); // Επανεκκίνηση του χρονόμετρου για την επόμενη ερώτηση
+                startTimer(); 
             } else {
-                alert('Θα φας ξύλο!');
+                alert('Bruh...');
                 playSound('wrong');
                 displayGIF('wrong', questionType);
                 resetGame();
@@ -158,81 +156,38 @@
         }
 
         function resetGame() {
-            document.getElementById('timer').style.display = 'none'; // Απόκρυψη του χρονόμετρου
+            document.getElementById('timer').style.display = 'none'; 
             document.getElementById('quiz').style.display = 'block';
             document.getElementById('game').style.display = 'none';
             document.getElementById('final').style.display = 'none';
             document.getElementById('extra').style.display = 'none';
             document.getElementById('lastQuestion').style.display = 'none';
             document.getElementById('message').style.display = 'none';
-            clearInterval(timerInterval); // Εξασφαλίζει ότι το χρονόμετρο έχει σταματήσει
-            document.getElementById('time').textContent = '9'; // Επαναφορά της εμφάνισης του χρονόμετρου
+            clearInterval(timerInterval); 
+            document.getElementById('time').textContent = '9'; 
         }
 
         function finalRevealMessage() {
-    alert("Όλες οι απαντήσεις είναι σωστές χαζό μου");
+            alert("Every question was right!");
 
-    setTimeout(() => {
-        clearInterval(timerInterval); // Σταματάει το χρονόμετρο όταν φτάνουμε στο τελικό μήνυμα
-        document.getElementById('timer').style.display = 'none'; // Απόκρυψη του χρονόμετρου
-        document.getElementById('lastQuestion').style.display = 'none'; // Απόκρυψη της τελευταίας ερώτησης
-        document.getElementById('message').style.display = 'block'; // Εμφάνιση του ειδικού μηνύματος
-        const message = "Αγάπη μου, είμαι πάρα πολύ περήφανος για εσένα και για ό,τι έχεις καταφέρει μέχρι τώρα. Για να είμαι ειλικρινής δεν ξέρω γιατί το έφτιαξα όλο αυτό αλλά απλά ήθελα να σε αποχαιρετήσω κάπως με έναν πιο αστείο τρόπο ώστε να μην πέσω στα ψυχοφάρμακα. Με έκανες και με κάνεις ακόμα περήφανο και χαίρομαι πάρα πολύ που είμαστε μαζί ήταν οι καλύτεροι 8 μήνες που έχω περάσει ποτέ στη ζωή μου και το εννοώ. Ξέρω ότι θα είναι πάρα πολύ δύσκολο όλο αυτό αλλά επειδή το θέλουμε και οι δύο θα τα καταφέρουμε, το πιστεύω. Θα έχουμε σκαμπανεβάσματα αλλά δεν θα ξεχνάμε ότι συμφωνήσαμε πως το κλειδί είναι η επικοινωνία. Να είσαι αληθινός εκεί στα ξένα. Καλό ταξίδι μωράκι μου όμορφο να με σκέφτεσαι και να με θυμάσαι. Σ’ αγαπώ πολύ, το γκουτζούνι σου <3";
-        document.getElementById('finalMessage').textContent = message;
-    }, 100); // Καθυστέρηση 100ms πριν την εμφάνιση του υπόλοιπου μηνύματος
-}
-
-
-
-        function playSound(type) {
-            const sound = new Audio();
-            if (type === 'correct') {
-                sound.src = 'correct.mp3';
-            } else {
-                sound.src = 'wrong.mp3';
-            }
-            sound.play();
-        }
-
-        function displayGIF(type, questionType) {
-            let gifURL = '';
-            if (type === 'correct') {
-                if (questionType === 'date') {
-                    gifURL = 'https://media.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif';
-                } else if (questionType === 'trip') {
-                    gifURL = 'https://media.giphy.com/media/l3vR0bfrXc7G4Tx0w/giphy.gif';
-                } else if (questionType === 'song') {
-                    gifURL = 'https://media.giphy.com/media/xT9DPwINN7VbxQD9aA/giphy.gif';
-                } else if (questionType === 'food') {
-                    gifURL = 'https://media.giphy.com/media/3o6fIZOlgU5q1gGtaE/giphy.gif';
-                }
-            } else {
-                if (questionType === 'date') {
-                    gifURL = 'https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif';
-                } else if (questionType === 'trip') {
-                    gifURL = 'https://media.giphy.com/media/3o6gEalZmB9AqRjS5m/giphy.gif';
-                } else if (questionType === 'song') {
-                    gifURL = 'https://media.giphy.com/media/26AHqZycSplGWWPAI/giphy.gif';
-                } else if (questionType === 'food') {
-                    gifURL = 'https://media.giphy.com/media/3oz8xxsP3EmrNWJpfi/giphy.gif';
-                }
-            }
-            const img = document.createElement('img');
-            img.src = gifURL;
-            img.style.width = '300px';
-            img.style.height = 'auto';
-            img.style.marginTop = '20px';
-            document.body.appendChild(img);
             setTimeout(() => {
-                img.remove();
-            }, 3000);
+                clearInterval(timerInterval); 
+                document.getElementById('timer').style.display = 'none'; 
+                document.getElementById('lastQuestion').style.display = 'none'; 
+                document.getElementById('message').style.display = 'block'; 
+                const message = "You killed it! Almost...   Lets grab a coffee tomorrow";
+                document.getElementById('finalMessage').textContent = message;
+            }, 100); 
         }
+
 
         function startQuiz() {
             resetGame();
-            startTimer(); // Ξεκινά το χρονόμετρο όταν ξεκινά το κουίζ
+            startTimer(); 
         }
     </script>
 </body>
 </html>
+
+
 
